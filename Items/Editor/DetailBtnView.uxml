@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:Toggle label="Use Gold" name="BoolField" binding-path="useGold" value="false" toggle-on-label-click="false" text=""/>
+        <ui:VisualElement name="PriceInfoBox">
+            <uie:ObjectField label="Cache Icon" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="SpriteField" binding-path="cacheIcon"/>
+            <ui:UnsignedIntegerField label="Price Value" value="0" name="PriceValue" binding-path="basePrice"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
