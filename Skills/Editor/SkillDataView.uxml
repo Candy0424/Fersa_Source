@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:DropdownField label="Target skill" name="TargetSkillDropdown" binding-path="className" />
+        <ui:EnumField label="Conditioner type" value="Center" type="YIS.Code.Skills.ConditionerType, Assembly-CSharp" name="ConditionTypeDropdown" binding-path="conditionerType" />
+        <ui:TextField label="Attributes name" placeholder-text="인터페이스를  ,로 구분하여 입력" name="SubClassParams" binding-path="checkAttributeName" />
+        <uie:EnumFlagsField label="Check types" value="DynamicTransform" type="YIS.Code.Defines.CheckType, Assembly-CSharp" name="CheckTypes" binding-path="checkSkillType" />
+        <ui:VisualElement name="CheckBox" style="flex-direction: row; justify-content: space-between; flex-wrap: nowrap; margin-top: 20px;">
+            <ui:Label text="메서드 만들기 버튼" name="Label" />
+            <ui:Button text="MakeMethod" name="MakeBtn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
