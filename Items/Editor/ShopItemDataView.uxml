@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:EnumField label="Shop ItemType" value="Center" type="YIS.Code.Defines.ShopItemType, Assembly-CSharp" name="ShopItemEnum" binding-path="shopItemType"/>
+        <ui:VisualElement name="ItemInfoBox" style="flex-grow: 0;">
+            <uie:ObjectField label="Item Data" type="YIS.Code.Items.ItemDataSO, Assembly-CSharp" name="ItemData" binding-path="itemData"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="SkillInfoBox">
+            <uie:ObjectField label="Skill Data" type="YIS.Code.Skills.SkillDataSO, Assembly-CSharp" name="SkillData" binding-path="skillData"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="HpInfoBox">
+            <uie:ObjectField label="Hp Data" name="hpValue" binding-path="hpData" type="YIS.Code.Items.HpDataSO, Assembly-CSharp"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
